@@ -22,6 +22,10 @@ export default function Blog(props) {
       return allSlugs[0]
     }
   }
+  const listItems = data.frontmatter.ingredients.map((ingredient) =>
+    <li key={ingredient}>    {ingredient}
+    </li>
+  );
 
   return (
     <Layout>
@@ -37,9 +41,7 @@ export default function Blog(props) {
           <h3>{data.frontmatter.date}</h3>
         </div>
         <div className={blogTemplateStyles.blog__info}>
-          <ul>
-              <li>{data.frontmatter.ingredients}</li>
-          </ul>
+            {listItems}
         </div>
         <div
           className={blogTemplateStyles.blog__body}
