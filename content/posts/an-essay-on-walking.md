@@ -2,7 +2,7 @@
 date: 2019-07-31T22:43:31.000+00:00
 title: An Essay on Walking
 author: Robert Thoreau
-hero_image: ''
+hero_image: "/content/images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
 category:
 - recipe
 ingredients:
