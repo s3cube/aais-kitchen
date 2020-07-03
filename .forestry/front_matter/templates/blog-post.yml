@@ -40,11 +40,11 @@ fields:
   description: Enter hero image for blog post here
   default: "/content/images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
 - name: ingredients
-  type: blocks
-  label: Ingredients
-  template_types: []
+  type: list
   config:
+    use_select: false
     min: 
     max: 
+  label: Ingredients
 pages:
 - content/posts/an-essay-on-walking.md
