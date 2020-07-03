@@ -36,6 +36,9 @@ export default function Blog(props) {
           <h1>{data.frontmatter.title}</h1>
           <h3>{data.frontmatter.date}</h3>
         </div>
+        <div className={blogTemplateStyles.blog__info}>
+          <h1>{data.frontmatter.ingredients}</h1>
+        </div>
         <div
           className={blogTemplateStyles.blog__body}
           dangerouslySetInnerHTML={{ __html: data.html }}
@@ -74,6 +77,7 @@ export const getPostData = graphql`
             }
           }
         }
+        ingredients
       }
       html
     }
